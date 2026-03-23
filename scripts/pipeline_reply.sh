@@ -8,15 +8,15 @@
 
 # 非インタラクティブSSH環境でも PATH を通す
 source ~/.bashrc 2>/dev/null || source ~/.bash_profile 2>/dev/null || true
+export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
 # claude コマンドの場所を特定
 CLAUDE_CMD=$(which claude 2>/dev/null)
 if [ -z "$CLAUDE_CMD" ]; then
-  for candidate in "$HOME/.local/bin/claude" "$HOME/.npm-global/bin/claude" "/usr/local/bin/claude" "/usr/bin/claude"; do
-    if [ -x "$candidate" ]; then
-      CLAUDE_CMD="$candidate"
-      break
-    fi
+  NVM_CLAUDE=$(ls "$HOME/.nvm/versions/node/"*/bin/claude 2>/dev/null | tail -1)
+  for candidate in "$NVM_CLAUDE" "$HOME/.local/bin/claude" "$HOME/.npm-global/bin/claude" "/usr/local/bin/claude" "/usr/bin/claude"; do
+    [ -n "$candidate" ] && [ -x "$candidate" ] && CLAUDE_CMD="$candidate" && break
   done
 fi
 if [ -z "$CLAUDE_CMD" ]; then
