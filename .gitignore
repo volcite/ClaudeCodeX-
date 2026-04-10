@@ -1,37 +1,89 @@
-# ========================================
-# ユーザー固有データ（個人情報・実行結果）
-# ========================================
+# ディレクトリ構造を保持するための .gitkeep は常に追跡する
+!**/.gitkeep
 
-# 環境変数（Webhook URL等）
+# ========================================
+# 環境変数・認証情報（絶対にGitにあげない）
+# ========================================
 .env
+credentials/
+config/note_cookies.json
+video/.env
 
-# ペルソナ・文体（ユーザーごとに異なる）
+# ========================================
+# ユーザー固有設定ファイル
+# ========================================
+CLAUDE.local.md
+.claude/settings.local.json
+
+# ペルソナ・文体（x-setup または手動で生成）
 data/persona.md
 data/style_guide.md
 
-# 実行時に生成されるデータ
-data/analytics.json
-data/analytics_archive.json
+# 投稿戦略（アナリストが自動更新）
 data/strategy.md
-data/input_metrics.json
-data/trends.json
-data/research_history.json
-data/content_plan.json
-data/content_plan.backup.json
-data/draft.json
-data/approved_post.json
-data/weekly_plan.json
-data/pipeline_context.json
-data/visual_prompt.json
-data/payload.json
-data/temp_*.json
 
-# 投稿履歴
-posts/*.json
+# ナレッジストック（ユーザーが蓄積するデータ）
+data/knowledge_stock.json
+data/knowledge_sources/
 
-# ログ
-logs/
-
-# 文体サンプル（ユーザー固有の投稿例）
+# 文体サンプル（ユーザー固有の実投稿例）
 .claude/skills/writing-style-clone/assets/x_post_sample.md
 
+# ========================================
+# 投稿パイプライン 実行時生成データ（post/data/）
+# ========================================
+post/data/analytics.json
+post/data/analytics_archive.json
+post/data/input_metrics.json
+post/data/input_mentions.json
+post/data/trends.json
+post/data/research_history.json
+post/data/content_plan.json
+post/data/content_plan.backup.json
+post/data/draft.json
+post/data/approved_post.json
+post/data/weekly_plan.json
+post/data/pipeline_context.json
+post/data/visual_prompt.json
+post/data/payload.json
+post/data/temp_*.json
+post/data/reactive_replies.json
+post/data/reply_counter.json
+post/data/injected_topic.json
+
+# 投稿履歴（アカウント固有）
+post/history/
+
+# ========================================
+# 記事パイプライン 実行時生成データ
+# ========================================
+data/article_analysis_history.json
+data/article_theme_candidates.json
+data/article_plan.json
+data/article_draft.json
+data/article_drafts/
+data/buzz_insights.json
+data/video_result.json
+
+# 記事キャッシュ・レポート
+article/cache/
+article/output/
+
+# ========================================
+# プレゼント企画データ
+# ========================================
+giveaway/config.json
+giveaway/data/
+
+# ========================================
+# ログ
+# ========================================
+logs/
+
+# ========================================
+# Remotion 動画生成
+# ========================================
+video/node_modules/
+video/out/
+video/public/scenes/
+video/public/audio/

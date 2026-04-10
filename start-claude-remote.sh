@@ -144,7 +144,7 @@ if [ "$USE_TMUX" = true ] && command -v tmux &> /dev/null; then
     # 既存セッションのログからURLを取得
     EXISTING_LOG=$(find /tmp -name "claude-${TMUX_NAME}-*" -type f 2>/dev/null | head -1)
     if [ -n "$EXISTING_LOG" ]; then
-      EXISTING_URL=$(grep -oE 'https?://[^ ]+' "$EXISTING_LOG" 2>/dev/null | head -1)
+      EXISTING_URL=$(grep -oE 'https?://[^ ]+' "$EXISTING_LOG" 2>/dev/null | grep -v 'code.claude.com/docs' | head -1)
       if [ -n "$EXISTING_URL" ]; then
         LOG_FILE="$EXISTING_LOG"
         json_success "$EXISTING_URL"
@@ -163,7 +163,7 @@ fi
 log "Starting claude remote-control..."
 
 # コマンド構築
-CLAUDE_ARGS="remote-control --name \"${SESSION_NAME}\" --capacity ${CAPACITY}"
+CLAUDE_ARGS="remote-control --name \"${SESSION_NAME}\" --capacity ${CAPACITY} --spawn=same-dir"
 if [ "$VERBOSE" = true ]; then
   CLAUDE_ARGS="${CLAUDE_ARGS} --verbose"
 fi
@@ -194,8 +194,8 @@ for i in $(seq 1 "$TIMEOUT"); do
   sleep 1
 
   if [ -f "$LOG_FILE" ]; then
-    # URLを抽出
-    URL=$(grep -oE 'https?://[^ ]+' "$LOG_FILE" 2>/dev/null | head -1)
+    # URLを抽出（ドキュメントURLを除外）
+    URL=$(grep -oE 'https?://[^ ]+' "$LOG_FILE" 2>/dev/null | grep -v 'code.claude.com/docs' | head -1)
     if [ -n "$URL" ]; then
       log "URL found after ${i}s"
       json_success "$URL"

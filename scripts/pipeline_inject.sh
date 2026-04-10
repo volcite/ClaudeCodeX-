@@ -50,7 +50,7 @@ const output = {
   status: 'active'
 };
 
-fs.writeFileSync('data/injected_topic.json', JSON.stringify(output, null, 2), 'utf-8');
+fs.writeFileSync('post/data/injected_topic.json', JSON.stringify(output, null, 2), 'utf-8');
 console.log(JSON.stringify(output, null, 2));
 
 // 有効期限を計算

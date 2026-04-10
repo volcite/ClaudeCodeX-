@@ -44,8 +44,8 @@ log() {
 log "========== リプライ返信パイプライン開始 =========="
 
 # .envファイル読み込み
-if [ -f ".env" ]; then
-  export $(grep -v '^#' .env | xargs)
+if [ -f "$PROJECT_DIR/.env" ]; then
+  export $(grep -v '^#' "$PROJECT_DIR/.env" | xargs)
 else
   log "警告: .envファイルが見つかりません"
 fi
@@ -56,7 +56,7 @@ if [ -z "$REPLY_WEBHOOK_URL" ]; then
 fi
 
 # 入力: stdinまたはファイル引数からJSONを受け取る
-INPUT_FILE="data/input_mentions.json"
+INPUT_FILE="post/data/input_mentions.json"
 
 if [ -n "$1" ] && [ -f "$1" ]; then
   # ファイル引数モード
@@ -85,7 +85,7 @@ log "新着リプライ: ${REPLY_COUNT}件"
 DAILY_LIMIT=150
 PER_RUN_LIMIT=15
 TODAY=$(date +%Y-%m-%d)
-COUNTER_FILE="$PROJECT_DIR/data/reply_counter.json"
+COUNTER_FILE="$PROJECT_DIR/post/data/reply_counter.json"
 
 # カウンターファイル初期化 or リセット
 if [ ! -f "$COUNTER_FILE" ]; then
@@ -115,9 +115,9 @@ log "本日の残予算: ${REMAINING}件, 今回の上限: ${BUDGET}件"
 
 # コミュニティマネージャーを実行
 log "コミュニティマネージャー実行中... (入力: ${REPLY_COUNT}件, 予算: ${BUDGET}件)"
-REPLY_OUTPUT_FILE="data/reactive_replies.json"
+REPLY_OUTPUT_FILE="post/data/reactive_replies.json"
 
-if CM_BUDGET="$BUDGET" CM_INPUT_FILE="data/input_mentions.json" \
+if CM_BUDGET="$BUDGET" CM_INPUT_FILE="post/data/input_mentions.json" \
    "$CLAUDE_CMD" -p "$(awk '/^---$/{n++; next} n>=2' .claude/agents/community_manager.md)" > /dev/null 2>> "$LOG_FILE"; then
   log "コミュニティマネージャー完了 ✅"
 else

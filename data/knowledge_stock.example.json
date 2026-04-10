@@ -1,0 +1,21 @@
+{
+  "last_updated": "",
+  "items": [
+    {
+      "id": "k_example_001",
+      "created_at": "YYYY-MM-DD",
+      "category": "philosophy",
+      "priority": "high",
+      "topic": "ナレッジのタイトル",
+      "content": "ナレッジの内容。発信テーマに関するあなたの経験・考え・知見を記入してください。ライターがX投稿を作成するときの素材として使われます。",
+      "source_file": "",
+      "source_urls": [],
+      "tags": ["タグ1", "タグ2"],
+      "usage_count": 0,
+      "max_usage": 5,
+      "last_used_at": "",
+      "status": "active",
+      "slot_affinity": "morning"
+    }
+  ]
+}
