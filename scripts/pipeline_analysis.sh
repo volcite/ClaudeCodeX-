@@ -55,28 +55,28 @@ log "========== 分析パイプライン開始 =========="
 log "入力データ: $METRICS_FILE"
 
 # データを input_metrics.json として一時コピー（アナリストが読み込みやすいように）
-cp "$METRICS_FILE" "$PROJECT_DIR/data/input_metrics.json"
+cp "$METRICS_FILE" "$PROJECT_DIR/post/data/input_metrics.json"
 
 # アナリストエージェントの実行
 log "アナリスト（データ分析・戦略更新）実行中..."
 
 if "$CLAUDE_CMD" -p "$(awk '/^---$/{n++; next} n>=2' .claude/agents/analyst.md)" >> "$LOG_FILE" 2>&1; then
   log "アナリスト完了 ✅"
-  log "分析結果が data/analytics.json と data/strategy.md に反映されました。"
+  log "分析結果が post/data/analytics.json と data/strategy.md に反映されました。"
   
   # コンテキスト膨張を防ぐため、posts配列を最大30件にし、古いものはアーカイブに退避
   if command -v jq &> /dev/null; then
-    LEN=$(jq '.posts | length' data/analytics.json 2>/dev/null || echo "0")
+    LEN=$(jq '.posts | length' post/data/analytics.json 2>/dev/null || echo "0")
     if [ "$LEN" -gt 30 ]; then
-      jq '.posts[:-30]' data/analytics.json > data/temp_old_posts.json
-      jq '.posts |= .[-30:]' data/analytics.json > data/temp_analytics.json && mv data/temp_analytics.json data/analytics.json
+      jq '.posts[:-30]' post/data/analytics.json > post/data/temp_old_posts.json
+      jq '.posts |= .[-30:]' post/data/analytics.json > post/data/temp_analytics.json && mv post/data/temp_analytics.json post/data/analytics.json
       
-      if [ ! -f data/analytics_archive.json ]; then
-        echo "[]" > data/analytics_archive.json
+      if [ ! -f post/data/analytics_archive.json ]; then
+        echo "[]" > post/data/analytics_archive.json
       fi
       
-      jq '. + input' data/analytics_archive.json data/temp_old_posts.json > data/temp_arc.json && mv data/temp_arc.json data/analytics_archive.json
-      rm -f data/temp_old_posts.json
+      jq '. + input' post/data/analytics_archive.json post/data/temp_old_posts.json > post/data/temp_arc.json && mv post/data/temp_arc.json post/data/analytics_archive.json
+      rm -f post/data/temp_old_posts.json
       
       log "過去の分析データを analytics_archive.json に退避しました（直近30件保持）"
     fi
