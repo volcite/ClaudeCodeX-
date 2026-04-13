@@ -298,6 +298,40 @@ else
 fi
 
 # ========================================
+# STEP 3.5: 選定テーマを分析履歴に記録（翌週の重複回避用）
+# ========================================
+log "[STEP 3.5] 選定テーマを分析履歴に記録..."
+
+node -e "
+const fs = require('fs');
+const candidates = JSON.parse(fs.readFileSync('data/article_theme_candidates.json', 'utf-8'));
+const historyFile = '$HISTORY_FILE';
+const history = JSON.parse(fs.readFileSync(historyFile, 'utf-8'));
+const today = candidates.date || new Date().toISOString().slice(0, 10);
+
+const selectedThemes = (candidates.selected || []).map(s => ({
+  rank: s.rank,
+  title: s.theme || s.title_draft || '',
+  angle: s.angle || '',
+  target_reader: s.target_reader || ''
+}));
+
+// STEP 2 で作成済みの今日のエントリに追記、なければ新規追加
+const entry = history.entries.find(e => e.date === today);
+if (entry) {
+  entry.selected_themes = selectedThemes;
+} else {
+  history.entries.push({ date: today, selected_themes: selectedThemes });
+}
+
+history.last_updated = new Date().toISOString();
+fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
+console.log('selected_themes 保存完了: ' + selectedThemes.length + '件');
+" >> "$LOG_FILE" 2>&1
+
+log "[STEP 3.5] 選定テーマ記録完了 ✅"
+
+# ========================================
 # STEP 4 & 5: 選定した5本を順番に執筆＆Webhook送信
 # ========================================
 log "[STEP 4-5] 5本の記事執筆＆送信を開始..."

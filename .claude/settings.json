@@ -16,7 +16,9 @@
       "Bash(mv data/* *)",
       "Bash(mkdir -p *)",
       "Bash(date *)",
-      "Bash(echo *)"
+      "Bash(echo *)",
+      "Bash(node article/x-article-researcher.js *)",
+      "Bash(node article/x-article-analyzer.js *)"
     ],
     "deny": [
       "Bash(rm -rf *)",
