@@ -1,0 +1,316 @@
+{
+  "date": "2026-03-26",
+  "search_queries_used": [
+    "Claude Code auto mode 2026年3月 新機能",
+    "Claude computer use Mac 2026年3月",
+    "AIエージェント 最新トレンド 2026年3月",
+    "Anthropic Claude 最新ニュース 2026年3月",
+    "Claude Code skills.sh Qiita 2026年3月 活用ガイド",
+    "n8n AI自動化 ワークフロー 2026年 最新"
+  ],
+  "x_api_queries_used": [
+    "Claude AI -is:reply -is:retweet",
+    "Claude Code -is:reply -is:retweet"
+  ],
+  "relevant_trends": [
+    {
+      "topic": "Claude Code Auto Mode リリース（3月24日）",
+      "why_relevant": "Claude Codeに自動モードが追加。リスク評価に基づき安全な操作は自動実行、危険な操作のみ開発者に確認を求める仕組みが導入された。AIコーディングツールの自律性が一段階進化した重要アップデート。Teamプランで研究プレビュー提供中。",
+      "source": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "Claude Computer Use（Mac版）リリース（3月23日）",
+      "why_relevant": "ClaudeがMacのデスクトップを直接操作できるComputer Use機能が研究プレビューとして公開。ファイル検索・アプリ操作・ブラウザ操作を自律的に実行。iPhoneからの遠隔指示（Dispatch）にも対応しPro/Maxプラン向け。",
+      "source": "https://9to5mac.com/2026/03/23/anthropic-is-giving-claude-the-ability-to-use-your-mac-for-you/",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "Claude Code v2.1.76 大型アップデート（/loop・Voice Mode・MCP Elicitation）",
+      "why_relevant": "3月中に複数の大型アップデートを実施。/loopコマンドによるターミナル自動化、Voice Modeによる音声対話、Opus 4.6デフォルト化（1Mコンテキスト対応）、MCP Elicitation機能など。開発者の日常ワークフローを根本から変える機能群。",
+      "source": "https://qiita.com/AI-SKILL-LAB/items/aa6d96f7d18644ff95a1",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "Claude Code Skills（skills.sh）がQiitaで爆発的注目（114ブックマーク）",
+      "why_relevant": "Claude Code SkillsのQiita記事が114ブックマークを獲得しバズ。AIエージェントに専門スキルを追加する仕組みが開発者コミュニティで急速に浸透中。X上でもはてブ経由で拡散されている。",
+      "source": "https://qiita.com/yamamoto0/items/17817dc09a78078fa132",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "Anthropic vs 米国政府ペンタゴン訴訟 → App Store首位獲得",
+      "why_relevant": "Claudeが米国防省にブラックリスト入りされたが、逆に24時間以内にApp Store首位を獲得。政府規制への抵抗姿勢が民間からの強い支持を呼んだ。AI倫理と政府規制の最前線トピック。",
+      "source": "https://www.cnbc.com/2026/03/24/anthropic-lawsuit-pentagon-supply-chain-risk-claude.html",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "Claude利用枠2倍キャンペーン（3月13日〜27日、明日終了）",
+      "why_relevant": "Anthropicが期間限定でClaude利用上限を2倍にするキャンペーンを実施中。日本時間では平日3:00-21:00、週末は終日対象。明日3/27で終了予定。X上でも言及多数。",
+      "source": "https://tech-noisy.com/2026/03/16/claude-march-2026-usage-promotion-japan/",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "n8n AI Workflow Builder + AIエージェント機能強化（v2.13.x）",
+      "why_relevant": "n8nがAI Workflow Builder機能を導入し、自然言語でワークフロー設計が可能に。OpenAI・Claude・Gemini接続のマルチステップAIエージェント機能が全プラン無料利用可。v2.13.xでAutosave・Human-in-the-Loop対応も追加。",
+      "source": "https://dev.classmethod.jp/articles/n8n-ai-worflow-builder-wow/",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "OpenAI GPT-5.4 mini/nano リリース",
+      "why_relevant": "OpenAIが新モデルGPT-5.4 miniおよびnanoを発表。特にコーディングタスクで高性能。Claude競合としての比較対象に重要。",
+      "source": "https://www.fidx.co.jp/%E3%80%902026%E5%B9%B43%E6%9C%88%E6%9C%80%E6%96%B0%E3%80%91%E7%94%9F%E6%88%90ai%E3%81%AE%E5%85%A8%E5%8B%95%E5%90%91%E3%81%BE%E3%81%A8%E3%82%81%EF%BC%9Aopenai%E3%83%BBclaude%E3%83%BBgoogle%E3%81%8C/",
+      "source_type": "web_search"
+    },
+    {
+      "topic": "Google Stitch大型アップデート + Vibe Design",
+      "why_relevant": "GoogleのAI搭載UIデザインツール「Stitch」が大幅アップデート。テキスト・音声でUIイメージを伝えるだけでAIが画面を自動生成する「Vibe Design」を発表。AI業界全体の動向として重要。",
+      "source": "https://www.fidx.co.jp/%E3%80%902026%E5%B9%B43%E6%9C%88%E6%9C%80%E6%96%B0%E3%80%91%E7%94%9F%E6%88%90ai%E3%81%AE%E5%85%A8%E5%8B%95%E5%90%91%E3%81%BE%E3%81%A8%E3%82%81%EF%BC%9Aopenai%E3%83%BBclaude%E3%83%BBgoogle%E3%81%8C/",
+      "source_type": "web_search"
+    }
+  ],
+  "competitor_insights": [
+    {
+      "account": "@Jeanscpa",
+      "observation": "39,596フォロワーの税理士アカウント（村上ゆういち@魔界の税理士）。AIコーディングツールへの関心を素直に表明する投稿で今回のX API取得結果中最高のインプレッション105を獲得。「すごいけどもっと勉強したい」という正直な共感切り口＋質問形式末尾でリプライ誘発。非エンジニアがAIツールに言及するスタイル。",
+      "top_post_metrics": {
+        "text_preview": "claude codeすごいんだけど、もっと勉強したいな いまAIコミュニティって何か良いや",
+        "like_count": 2,
+        "retweet_count": 0,
+        "reply_count": 1
+      }
+    },
+    {
+      "account": "@JesseTinsley",
+      "observation": "30,517フォロワーの投資家。SaaS×AI投資テーゼという切り口でClaude・Grok・Geminiに言及。ビジネス・投資視点からのAI論考で高インプレッション（54）を獲得。権威者の名前を冒頭フックに使用し、番号付きリストで論点整理する構成。",
+      "top_post_metrics": {
+        "text_preview": "Orland Bravo (the founder and CEO of Thoma Bravo) and I share the same",
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0
+      }
+    },
+    {
+      "account": "@smdmts",
+      "observation": "1,048フォロワーのエンジニア（Masatoshi Shimada）。Claude Codeによるプロジェクト管理の可能性を示唆する投稿でリプライ1件獲得。「タスクボードもチケットも廃止しても良い気すらしている」という大胆な主張が議論を誘発する構造。",
+      "top_post_metrics": {
+        "text_preview": "Claude Codeによるプロジェクトの進行状況とかユビキタス言語である用語集を作成すると、プロジ",
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 1
+      }
+    },
+    {
+      "account": "@ariange1o",
+      "observation": "466フォロワー。Claude・ChatGPT・Geminiの料金体系変化（レートリミット強化で$100サブスク誘導）への不満を代弁する投稿。AI業界の課題を指摘する「消費者目線」の切り口。8インプレッション。",
+      "top_post_metrics": {
+        "text_preview": "The AI space is wild. We went from everyone changing form ChatGPT to Cl",
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0
+      }
+    },
+    {
+      "account": "@saku_apps",
+      "observation": "291フォロワーのひとり開発社長（ソロプレナー）。Claude Code利用量2倍キャンペーンの終了日時を具体的に計算して共有する情報整理型投稿。21インプレッション。実用的な情報提供スタイルが特徴。",
+      "top_post_metrics": {
+        "text_preview": "Claude Codeの利用量2倍キャンペーン、日本時間だと2026年3月29日(日) 12:59ごろ終了",
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0
+      }
+    }
+  ],
+  "viral_factors": [
+    {
+      "post_topic": "Claude Code学習意欲 + AIコミュニティ探し",
+      "post_url": "https://x.com/Jeanscpa/status/2036965516469035247",
+      "metrics": {
+        "like_count": 2,
+        "retweet_count": 0,
+        "reply_count": 1,
+        "impression_count": 105
+      },
+      "why_viral": "39,596フォロワーの影響力に加え、「すごいけど勉強したい」という正直な感想が共感を呼んだ。質問形式の末尾（「何か良いやつあるんかな？」）がリプライを誘発。短文で読みやすく、フォロワーが反応しやすい構造。reply_to_like比率0.5は会話誘発型として成功。",
+      "elements_to_steal": "新しいAIツールへの率直な感想＋「もっと知りたい」という学習意欲の表明＋コミュニティへの質問でリプライ誘発。教育型投稿と共感型投稿のハイブリッド手法。eveningスロット向き。"
+    },
+    {
+      "post_topic": "SaaS×AI投資テーゼ",
+      "post_url": "https://x.com/JesseTinsley/status/2036966038378864996",
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0,
+        "impression_count": 54
+      },
+      "why_viral": "30,517フォロワーベースによるリーチ力。著名投資家の名前（Orland Bravo / Thoma Bravo）を冒頭フックに使い、番号付きリストで論点整理。ビジネス・投資の切り口でAIを語る差別化。",
+      "elements_to_steal": "権威者の名前を冒頭フックに使用→自分の独自テーゼ展開→番号リストで構造化。ビジネス×AIの切り口は競合が少なく差別化しやすい。morningスロットの教育型に活用。"
+    },
+    {
+      "post_topic": "AI用途別使い分けリスト",
+      "post_url": "https://x.com/kawawaAI1/status/2036965605467967679",
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0,
+        "impression_count": 9
+      },
+      "why_viral": "「まだChatGPTしか使ってない人、正直かなり損してます」という煽りフックが強い。用途別に→で対応AIを並べるリスト形式が保存されやすい構造。実用的な情報を一目で把握可能。18フォロワーでありながらリスト形式の有用性でインプレッション獲得。",
+      "elements_to_steal": "煽り系フック（「損してます」）→用途別リスト→保存したくなる構造。リスト系投稿はsave CTAと相性が良い。morningスロットの教育型投稿に活用可能。"
+    },
+    {
+      "post_topic": "Claude Code自動モードニュース速報",
+      "post_url": "https://x.com/Syynya/status/2036966298555662376",
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0,
+        "impression_count": 8
+      },
+      "why_viral": "ニュース記事の引用＋重要ポイントの抜粋という速報型フォーマット。「サンドボックス環境での利用が推奨」という注意喚起を加えることで信頼性を担保。窓の杜記事からの引用で出典明示。",
+      "elements_to_steal": "速報型：ニュースURL引用→要点抜粋→注意点追記。信頼性と速報性の両立。morningスロットの最新情報解説型に最適。"
+    },
+    {
+      "post_topic": "Claude Codeでプロジェクト管理革命",
+      "post_url": "https://x.com/smdmts/status/2036966091176763489",
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 1,
+        "impression_count": 15
+      },
+      "why_viral": "「タスクボードもチケットも廃止しても良い気すらしている」という大胆な主張が議論を誘発。reply_count=1で会話誘発型投稿として成功。具体的なユースケース（用語集作成・進捗管理）を示しつつ常識への挑戦。",
+      "elements_to_steal": "大胆な主張（常識への挑戦）→具体的なユースケース提示→議論誘発。eveningスロットの共感・議論型投稿に活用可能。reply CTA向き。"
+    },
+    {
+      "post_topic": "Claude Code Skills 20選（はてブ経由バズ）",
+      "post_url": "https://x.com/shogookamoto/status/2036965840466436125",
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0,
+        "impression_count": 17
+      },
+      "why_viral": "Qiita記事（114ブックマーク）のはてブコメントまとめ投稿。3件のコメント引用＋記事URLという構造。技術コミュニティのキュレーション型投稿として機能。skills.shへの関心の高さを示す。",
+      "elements_to_steal": "話題の技術記事のはてブコメントをキュレーションする形式。コミュニティの反応を引用することで「この話題は盛り上がっている」感を演出。morningスロットの教育型に活用。"
+    },
+    {
+      "post_topic": "Claude Code機械学習ベース売買シグナル構築",
+      "post_url": "https://x.com/Ryo20251222/status/2036966498452029445",
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0,
+        "impression_count": 6
+      },
+      "why_viral": "「実際にやってみた」系の実践報告。Claude Codeで機械学習ベースの売買シグナルアルゴリズムを構築したという具体的な成果報告。「自動化するつもりは無し」という人間判断の重要性の強調が信頼感を醸成。",
+      "elements_to_steal": "実践報告型：具体的な成果（シグナルアルゴリズム構築）→「でも完全自動化はしない」という人間判断の価値強調。AI活用のバランス感覚を示すことで信頼性向上。"
+    }
+  ],
+  "topic_ideas": [
+    {
+      "idea": "Claude Code Auto Modeの全貌解説：「自動」と「安全」の両立はどこまで可能か",
+      "angle": "Auto Modeのリスク分類器の仕組みを解説しつつ、「完全自動化の夢と現実」を語る教育型投稿。サンドボックス推奨の注意点も含めてバランスの取れた解説。",
+      "trend_connection": "3月24日リリースの最新機能。X上でも@Syyynya等が早速話題にしている。TechCrunch・Engadget・9to5Macなど主要メディアが一斉報道。",
+      "inspired_by": "https://x.com/Syynya/status/2036966298555662376 + https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/"
+    },
+    {
+      "idea": "ClaudeがMacを操作する時代：Computer Useで何が変わるのか",
+      "angle": "中小企業経営者向けに「テクノロジーの民主化」の文脈で語る。書類作成・スケジュール管理など日常業務の自動化シナリオを具体的に提示。iPhoneからのDispatch機能も紹介。",
+      "trend_connection": "3月23日リリースのComputer Use機能。@toshi_k_807 の「中小こそ恩恵」切り口がX上で共感を集めている。",
+      "inspired_by": "https://x.com/toshi_k_807/status/2036965672337760426 + https://9to5mac.com/2026/03/23/anthropic-is-giving-claude-the-ability-to-use-your-mac-for-you/"
+    },
+    {
+      "idea": "Claude Code Skills完全入門：素のAgentを「最強の部下」に変える方法",
+      "angle": "skills.shの20選Qiita記事（114ブックマーク）を起点に、Skills機能の仕組みと実際に導入して効果があったSkillsを紹介する実践型投稿。SKILL.mdの設計ポイントも解説。",
+      "trend_connection": "Qiitaで114ブックマークのバズ記事。X上でもはてブ経由で拡散中（@shogookamoto投稿: 17インプレッション）。skills.shディレクトリの注目度が急上昇。",
+      "inspired_by": "https://x.com/shogookamoto/status/2036965840466436125 + https://qiita.com/yamamoto0/items/17817dc09a78078fa132"
+    },
+    {
+      "idea": "タスクボードはもういらない？Claude Codeによるプロジェクト管理の新常識",
+      "angle": "「チケット管理廃止論」という挑発的な切り口で議論を誘発。用語集自動生成・進捗管理の具体例を示して説得力を持たせる。eveningスロットの共感・議論型投稿に最適。",
+      "trend_connection": "@smdmts の投稿がリプライ1件を獲得しており、開発者コミュニティで議論を呼ぶテーマとして実績あり。",
+      "inspired_by": "https://x.com/smdmts/status/2036966091176763489"
+    },
+    {
+      "idea": "2026年3月AI業界まとめ：Anthropic vs ペンタゴン、Computer Use、Auto Mode同時発表の裏側",
+      "angle": "1週間の出来事を時系列で整理する「まとめ型」投稿。政治（ペンタゴン訴訟）・技術（Computer Use・Auto Mode）・ビジネス（App Store首位）の3軸で読み解く。",
+      "trend_connection": "3月第4週に複数の大型ニュースが集中。CNBC・TechCrunch・9to5Mac等が一斉報道。App Store首位獲得という劇的展開あり。",
+      "inspired_by": "https://www.cnbc.com/2026/03/24/anthropic-lawsuit-pentagon-supply-chain-risk-claude.html"
+    },
+    {
+      "idea": "n8n x Claude で業務を完全自動化した話：ノーコードAIワークフローの実践記録",
+      "angle": "n8nの自然言語Workflow Builder＋Claude APIの組み合わせで、非エンジニアでも業務自動化ができることを示す実践型投稿。v2.13.xの新機能も紹介。",
+      "trend_connection": "n8n v2.13.xでAIエージェント機能強化。AI Workflow Builder機能で自然言語からワークフロー生成が可能に。Series Cで$180M調達、評価額$25億。",
+      "inspired_by": "https://dev.classmethod.jp/articles/n8n-ai-worflow-builder-wow/ + https://uravation.com/media/n8n-guide-ai-workflow-automation/"
+    },
+    {
+      "idea": "AI使い分け完全ガイド2026年版：ChatGPT・Claude・Gemini・Grok、結局どれをいつ使うべきか",
+      "angle": "用途別の最適AIツール比較。@kawawaAI1 のリスト形式を参考にしつつ、より深い比較分析と自分の実体験を加える。レートリミット強化問題にも言及。",
+      "trend_connection": "AI料金体系の変化（レートリミット強化・$100サブスク誘導）がX上で話題に。@ariange1oの不満投稿やGPT-5.4 mini/nanoリリースなど競合動向も活発。",
+      "inspired_by": "https://x.com/kawawaAI1/status/2036965605467967679 + https://x.com/ariange1o/status/2036965808601993337"
+    }
+  ],
+  "follower_growth_signals": [
+    {
+      "post_topic": "Claude Code学習意欲 + コミュニティ探し",
+      "signal_type": "conversation_inducing",
+      "pattern": "率直な感想＋質問形式の末尾で会話を誘発するパターン。フォロワー数が多いアカウントでも「教えてほしい」という姿勢が共感を呼ぶ。reply_to_like比率0.5は高い会話誘発力を示す。",
+      "evidence_metrics": {
+        "reply_to_like_ratio": 0.5,
+        "like_count": 2,
+        "reply_count": 1
+      },
+      "applicable_slot": "evening",
+      "applicable_cta": "reply"
+    },
+    {
+      "post_topic": "Claude Codeプロジェクト管理革命論",
+      "signal_type": "unique_perspective",
+      "pattern": "既存の常識（タスクボード・チケット管理）への挑戦的な主張＋具体的ユースケース提示。議論を喚起しつつ専門性を示すパターン。reply_to_like比率が無限大（like=0でreply=1）は強い議論誘発力。",
+      "evidence_metrics": {
+        "reply_to_like_ratio": 1.0,
+        "like_count": 0,
+        "reply_count": 1
+      },
+      "applicable_slot": "evening",
+      "applicable_cta": "reply"
+    },
+    {
+      "post_topic": "AI用途別使い分けリスト",
+      "signal_type": "expertise_showcase",
+      "pattern": "煽りフック（「損してます」）→用途別リスト→保存されやすい構造。知識の体系化を示すことでフォロー動機を作るパターン。少フォロワー（18人）でも9インプレッション獲得はコンテンツ力の証。",
+      "evidence_metrics": {
+        "reply_to_like_ratio": 0.0,
+        "like_count": 0,
+        "reply_count": 0
+      },
+      "applicable_slot": "morning",
+      "applicable_cta": "save"
+    },
+    {
+      "post_topic": "ニュース速報＋要点解説型",
+      "signal_type": "expertise_showcase",
+      "pattern": "最新ニュースの速報＋重要ポイントの抜粋＋注意点追記。信頼できる情報源としてフォロー価値を示すパターン。出典URLの明示が信頼性を担保。",
+      "evidence_metrics": {
+        "reply_to_like_ratio": 0.0,
+        "like_count": 0,
+        "reply_count": 0
+      },
+      "applicable_slot": "morning",
+      "applicable_cta": "follow"
+    },
+    {
+      "post_topic": "Claude Code実践活用報告（機械学習シグナル構築）",
+      "signal_type": "expertise_showcase",
+      "pattern": "「実際にやってみた」系の実践報告＋具体的な成果＋「でも完全自動化はしない」という人間判断の価値強調。手を動かしている人の報告は信頼性が高くフォロー動機になる。",
+      "evidence_metrics": {
+        "reply_to_like_ratio": 0.0,
+        "like_count": 0,
+        "reply_count": 0
+      },
+      "applicable_slot": "both",
+      "applicable_cta": "follow"
+    }
+  ],
+  "recommended_hashtags": []
+}

@@ -1,0 +1,36 @@
+{
+  "genre_keywords": ["AI", "ChatGPT", "Claude", "自動化", "n8n", "副業"],
+  "campaign_duration_days": 3,
+  "note_word_count": {"min": 3000, "max": null},
+  "distribution_method": "quote_rt_only",
+  "distribution_description": "感想を添えた引用RTをしてくれた方全員にプレゼント配布",
+  "free_duration_days": 3,
+  "price_after_free": 980,
+  "schedule": {
+    "teaser": "-2days 12:00",
+    "pre_announce": "-1day 12:00",
+    "main_post": "day0 12:00",
+    "social_proof": "+1day 20:00",
+    "last_day_warning": "+3days 12:00",
+    "close": "+3days 23:59"
+  },
+  "reply_filter_keywords": ["受け取り", "ほしい", "欲しい", "ください", "お願い", "知りたい", "気になる"],
+  "quote_rt_min_chars": 20,
+  "note_research_urls": {
+    "technology": "https://note.com/topic/technology",
+    "business": "https://note.com/topic/business",
+    "ai_search": "https://note.com/search?q=AI+自動化&sort=popular"
+  },
+  "brain_research_urls": {
+    "top": "https://brain-market.com/"
+  },
+  "x_api": {
+    "max_requests_per_run": 15,
+    "sleep_between_requests": 2,
+    "buzz_thresholds": {
+      "notable": 50,
+      "viral": 200,
+      "retweet_strong": 20
+    }
+  }
+}

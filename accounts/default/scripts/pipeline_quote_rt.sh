@@ -49,6 +49,7 @@ fi
 # 作業ディレクトリ設定
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+SHARED_DIR="$(dirname "$PROJECT_DIR")/shared"
 cd "$PROJECT_DIR"
 
 LOG_DIR="$PROJECT_DIR/logs"
@@ -182,7 +183,7 @@ log "[STEP 1] バズ投稿を検索中..."
 
 mkdir -p "$PROJECT_DIR/quote-rt/data"
 
-if node "$PROJECT_DIR/quote-rt/x-qrt-finder.js" --min-faves "$MIN_FAVES" >> "$LOG_FILE" 2>&1; then
+if node "${SHARED_DIR}/quote-rt/x-qrt-finder.js" --min-faves "$MIN_FAVES" >> "$LOG_FILE" 2>&1; then
   FINDER_EXIT=$?
 else
   FINDER_EXIT=$?

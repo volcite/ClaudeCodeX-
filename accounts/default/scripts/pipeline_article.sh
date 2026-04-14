@@ -40,6 +40,7 @@ fi
 # 作業ディレクトリ
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+SHARED_DIR="$(dirname "$PROJECT_DIR")/shared"
 cd "$PROJECT_DIR"
 
 ARTICLE_DIR="$PROJECT_DIR/article"
@@ -262,7 +263,7 @@ fi
 # ========================================
 log "[STEP 2.5] バズインサイト抽出（いいね×BM率 分析）..."
 
-if node scripts/extract_buzz_insights.js >> "$LOG_FILE" 2>&1; then
+if node "${SHARED_DIR}/scripts/extract_buzz_insights.js" >> "$LOG_FILE" 2>&1; then
   log "[STEP 2.5] buzz_insights.json 更新完了 ✅"
 else
   log "[STEP 2.5] バズインサイト抽出失敗 ⚠️ 既存データで続行"

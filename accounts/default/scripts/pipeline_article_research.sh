@@ -15,6 +15,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+SHARED_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)/shared"
 ARTICLE_DIR="${PROJECT_DIR}/article"
 ENV_FILE="${PROJECT_DIR}/.env"
 
@@ -221,7 +222,7 @@ main() {
     echo ""
 
     # コマンド組み立て
-    local cmd="node \"${ARTICLE_DIR}/x-article-researcher.js\""
+    local cmd="node \"${SHARED_DIR}/article/x-article-researcher.js\""
     cmd+=" --min-faves ${min_faves}"
     cmd+=" --min-retweets ${min_retweets}"
     cmd+=" --lang ${lang}"
@@ -276,7 +277,7 @@ main() {
     log_info "分析対象: ${json_report}"
 
     # コマンド組み立て
-    local analyze_cmd="node \"${ARTICLE_DIR}/x-article-analyzer.js\" \"${json_report}\""
+    local analyze_cmd="node \"${SHARED_DIR}/article/x-article-analyzer.js\" \"${json_report}\""
     analyze_cmd+=" --top ${top}"
 
     [[ -n "$category" ]] && analyze_cmd+=" --category \"${category}\""
